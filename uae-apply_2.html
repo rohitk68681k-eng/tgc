@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UAE Jobs 2025 — Gulf Recruitment | TGC</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0b1f3a;
+    --navy-mid: #112847;
+    --navy-light: #1a3a5c;
+    --gold: #c9a227;
+    --gold-light: #f0c84a;
+    --gold-pale: #fff8e7;
+    --white: #ffffff;
+    --off-white: #f8f7f3;
+    --text-muted: #6b7a8d;
+    --border: rgba(201,162,39,0.25);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--off-white);
+    color: var(--navy);
+    overflow-x: hidden;
+  }
+
+  /* ─── TOP BAR ─────────────────────────── */
+  .topbar {
+    background: var(--navy);
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .topbar span { display: flex; align-items: center; gap: 6px; }
+
+  /* ─── NAV ─────────────────────────────── */
+  nav {
+    background: var(--white);
+    border-bottom: 1.5px solid var(--border);
+    padding: 14px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 16px rgba(11,31,58,0.08);
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: 40px; height: 40px;
+    background: var(--navy);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 800; color: var(--gold);
+    letter-spacing: -1px;
+  }
+  .logo-text { font-size: 15px; font-weight: 700; color: var(--navy); line-height: 1.2; }
+  .logo-sub { font-size: 11px; font-weight: 400; color: var(--text-muted); letter-spacing: 0.5px; }
+  .nav-cta {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    font-family: 'Outfit', sans-serif;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ─── HERO ────────────────────────────── */
+  .hero {
+    background: var(--navy);
+    color: var(--white);
+    padding: 80px 5vw 72px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,162,39,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-flag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,162,39,0.15);
+    border: 1px solid rgba(201,162,39,0.35);
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold-light);
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+  .hero h1 em {
+    color: var(--gold-light);
+    font-style: normal;
+    display: block;
+  }
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.72);
+    max-width: 580px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(201,162,39,0.4);
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,162,39,0.45); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 32px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--gold); background: rgba(201,162,39,0.08); }
+
+  /* ─── STATS ───────────────────────────── */
+  .stats-bar {
+    background: var(--white);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding: 28px 5vw;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 800; color: var(--navy); line-height: 1; }
+  .stat-lbl { font-size: 12px; font-weight: 500; color: var(--text-muted); margin-top: 4px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+  /* ─── SECTION ─────────────────────────── */
+  section { padding: 64px 5vw; }
+  .section-label {
+    font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3vw, 38px);
+    color: var(--navy);
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+  .section-sub { font-size: 16px; color: var(--text-muted); max-width: 520px; line-height: 1.7; }
+
+  /* ─── COUNTRIES ───────────────────────── */
+  .countries { background: var(--white); }
+  .country-grid {
+    display: flex; gap: 16px; flex-wrap: wrap; margin-top: 36px;
+  }
+  .country-card {
+    background: var(--off-white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 28px;
+    display: flex; align-items: center; gap: 14px;
+    flex: 1 1 160px;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+  .country-card:hover { border-color: var(--gold); box-shadow: 0 4px 20px rgba(201,162,39,0.15); transform: translateY(-2px); }
+  .country-flag { font-size: 32px; line-height: 1; }
+  .country-name { font-weight: 700; font-size: 15px; color: var(--navy); }
+  .country-jobs { font-size: 13px; color: var(--gold); font-weight: 600; margin-top: 2px; }
+
+  /* ─── JOBS GRID ───────────────────────── */
+  .jobs-section { background: var(--off-white); }
+  .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 36px;
+  }
+  .job-card {
+    background: var(--white);
+    border: 1.5px solid rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 22px 20px;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .job-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(201,162,39,0.12); }
+  .job-icon { font-size: 26px; margin-bottom: 12px; }
+  .job-title { font-weight: 700; font-size: 15px; color: var(--navy); margin-bottom: 6px; }
+  .job-count { font-size: 13px; color: var(--gold); font-weight: 600; }
+  .job-badge {
+    display: inline-block;
+    background: var(--gold-pale);
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 99px;
+    margin-top: 10px;
+    border: 1px solid rgba(201,162,39,0.3);
+  }
+
+  /* ─── PROCESS ─────────────────────────── */
+  .process { background: var(--navy); color: var(--white); }
+  .process .section-title { color: var(--white); }
+  .process .section-sub { color: rgba(255,255,255,0.6); }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .step { position: relative; }
+  .step-num {
+    width: 44px; height: 44px;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 800; font-size: 18px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--white); }
+  .step p { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+  /* ─── COST NOTICE ─────────────────────── */
+  .cost-section { background: var(--white); }
+  .cost-box {
+    background: #fffbf0;
+    border: 2px solid var(--gold);
+    border-radius: 16px;
+    padding: 36px 40px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .cost-header {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 20px; font-weight: 800; color: var(--navy);
+    margin-bottom: 24px;
+  }
+  .cost-header .warn-icon {
+    width: 40px; height: 40px; background: #fff3cd; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-size: 20px;
+  }
+  .cost-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(201,162,39,0.2);
+    gap: 12px;
+  }
+  .cost-row:last-of-type { border-bottom: none; }
+  .cost-row-label { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--navy); font-weight: 500; }
+  .cost-row-amount { font-size: 15px; font-weight: 700; color: var(--navy); white-space: nowrap; }
+  .cost-total {
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 20px;
+    font-size: 17px; font-weight: 700;
+  }
+  .cost-total span:last-child { color: var(--gold-light); }
+  .refund-tag {
+    background: #e8f8ed;
+    color: #1a6e37;
+    border: 1px solid #a3d9b3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+
+  /* ─── CTA BANNER ──────────────────────── */
+  .cta-banner {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 72px 5vw;
+  }
+  .cta-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 4vw, 44px);
+    margin-bottom: 16px;
+    color: var(--white);
+  }
+  .cta-banner p { font-size: 17px; color: rgba(255,255,255,0.7); margin-bottom: 36px; font-weight: 300; }
+
+  /* ─── FOOTER ──────────────────────────── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    padding: 28px 5vw;
+    font-size: 13px;
+    border-top: 1px solid rgba(201,162,39,0.2);
+  }
+  footer strong { color: var(--white); }
+
+  /* ─── MODAL OVERLAY ───────────────────── */
+  .modal-backdrop {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(10, 20, 40, 0.78);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 36px 32px 28px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    animation: slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(28px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .modal-close {
+    position: absolute; top: 14px; right: 16px;
+    background: none; border: none;
+    font-size: 22px; color: var(--text-muted);
+    cursor: pointer; line-height: 1;
+    padding: 4px 8px; border-radius: 4px;
+  }
+  .modal-close:hover { color: var(--navy); background: var(--off-white); }
+  .modal-badge {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: #fff3cd; color: #8a5e00;
+    border: 1px solid #f0c84a;
+    border-radius: 99px; padding: 5px 14px;
+    font-size: 12px; font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: 0.4px;
+  }
+  .modal h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .modal-subtitle {
+    font-size: 14px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;
+  }
+  .modal-rows { margin-bottom: 20px; }
+  .modal-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.09);
+    gap: 10px;
+  }
+  .modal-row:last-of-type { border-bottom: none; }
+  .modal-row-left { display: flex; align-items: center; gap: 10px; }
+  .modal-row-icon { font-size: 18px; width: 28px; text-align: center; }
+  .modal-row-text { font-size: 14px; color: var(--navy); font-weight: 500; }
+  .modal-row-amount { font-size: 14px; font-weight: 700; color: var(--navy); white-space: nowrap; }
+  .modal-total-row {
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 13px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 15px; font-weight: 700;
+  }
+  .modal-total-row span:last-child { color: var(--gold-light); }
+  .modal-refund {
+    background: #e8f8ed; border: 1px solid #a3d9b3;
+    color: #1a6e37; border-radius: 8px;
+    padding: 10px 14px; font-size: 13px; font-weight: 500;
+    margin-bottom: 20px;
+    display: flex; align-items: flex-start; gap: 7px; line-height: 1.5;
+  }
+  .modal-terms {
+    font-size: 12px; color: var(--text-muted);
+    text-align: center; margin-bottom: 18px;
+    line-height: 1.6;
+  }
+  .modal-terms strong { color: var(--navy); }
+  .btn-agree {
+    width: 100%;
+    background: #25d366;
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+    text-decoration: none;
+  }
+  .btn-agree:hover { background: #1dbb59; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(37,211,102,0.4); }
+  .btn-agree svg { width: 22px; height: 22px; fill: var(--white); flex-shrink: 0; }
+
+  /* ─── RESPONSIVE ──────────────────────── */
+  @media (max-width: 600px) {
+    .topbar { gap: 12px; justify-content: center; font-size: 12px; }
+    .stats-bar { gap: 24px; }
+    .modal { padding: 28px 20px 22px; }
+    .cost-box { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📍 15th Floor, Ergo Tower, Kolkata 700091</span>
+  <span>🕐 Mon–Sat: 9:00am – 5:00pm</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="logo-mark">TGC</div>
+    <div>
+      <div class="logo-text">TGC</div>
+      <div class="logo-sub">Your Career, Beyond Borders</div>
+    </div>
+  </div>
+  <button class="nav-cta" onclick="openModal()">Apply Now →</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-flag">🇦🇪 UAE Hiring — 380+ Active Openings</div>
+  <h1>Work in the <em>UAE — 2026</em></h1>
+  <p>Trusted overseas recruitment connecting Indian professionals with verified employers across Dubai, Abu Dhabi, Sharjah & beyond.</p>
+  <div class="hero-actions">
+    <button class="btn-primary" onclick="openModal()">Apply Now — Free Registration</button>
+    <button class="btn-outline" onclick="document.getElementById('jobs').scrollIntoView({behavior:'smooth'})">View Open Roles ↓</button>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">380+</div><div class="stat-lbl">UAE Openings</div></div>
+  <div class="stat"><div class="stat-num">8,500+</div><div class="stat-lbl">Placed Candidates</div></div>
+  <div class="stat"><div class="stat-num">12+</div><div class="stat-lbl">Years Experience</div></div>
+  <div class="stat"><div class="stat-num">98%</div><div class="stat-lbl">Placement Rate</div></div>
+</div>
+
+<!-- COUNTRIES -->
+<section class="countries">
+  <div class="section-label">Where We Place You</div>
+  <div class="section-title">Gulf Countries We Serve</div>
+  <div class="section-sub">Active employer partnerships across the most in-demand Gulf destinations.</div>
+  <div class="country-grid">
+    <div class="country-card"><div class="country-flag">🇦🇪</div><div><div class="country-name">UAE</div><div class="country-jobs">380+ Jobs</div></div></div>
+    <div class="country-card"><div class="country-flag">🇶🇦</div><div><div class="country-name">Qatar</div><div class="country-jobs">240+ Jobs</div></div></div>
+    <div class="country-card"><div class="country-flag">🇸🇦</div><div><div class="country-name">Saudi Arabia</div><div class="country-jobs">290+ Jobs</div></div></div>
+    <div class="country-card"><div class="country-flag">🇴🇲</div><div><div class="country-name">Oman</div><div class="country-jobs">65+ Jobs</div></div></div>
+    <div class="country-card"><div class="country-flag">🇯🇴</div><div><div class="country-name">Jordan</div><div class="country-jobs">45+ Jobs</div></div></div>
+  </div>
+</section>
+
+<!-- JOBS GRID -->
+<section class="jobs-section" id="jobs">
+  <div class="section-label">Open Positions</div>
+  <div class="section-title">Jobs By Category</div>
+  <div class="section-sub">Openings across education, construction, healthcare, hospitality and more.</div>
+  <div class="jobs-grid">
+    <div class="job-card" onclick="openModal()"><div class="job-icon">📐</div><div class="job-title">Maths Teacher</div><div class="job-count">85+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🔬</div><div class="job-title">Science Teacher</div><div class="job-count">72+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🗣️</div><div class="job-title">English Teacher</div><div class="job-count">90+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🖥️</div><div class="job-title">Computer / IT Teacher</div><div class="job-count">60+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🏗️</div><div class="job-title">Construction</div><div class="job-count">180+ openings</div><div class="job-badge">Engineering</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🔧</div><div class="job-title">Engineering</div><div class="job-count">95+ openings</div><div class="job-badge">Technical</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🏥</div><div class="job-title">Healthcare</div><div class="job-count">140+ openings</div><div class="job-badge">Medical</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🍽️</div><div class="job-title">Hospitality</div><div class="job-count">210+ openings</div><div class="job-badge">Service</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🏫</div><div class="job-title">School Principal</div><div class="job-count">18+ openings</div><div class="job-badge">Leadership</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">👶</div><div class="job-title">Nursery / KG Teacher</div><div class="job-count">55+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">📋</div><div class="job-title">Academic Coordinator</div><div class="job-count">30+ openings</div><div class="job-badge">Education</div></div>
+    <div class="job-card" onclick="openModal()"><div class="job-icon">🎨</div><div class="job-title">Arts & PE Teacher</div><div class="job-count">45+ openings</div><div class="job-badge">Education</div></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="section-label">How It Works</div>
+  <div class="section-title">Simple 4-Step Process</div>
+  <div class="section-sub">Transparent, fast, and designed to get you hired.</div>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><h3>Express Interest</h3><p>Click Apply Now and confirm your interest via WhatsApp with our team.</p></div>
+    <div class="step"><div class="step-num">2</div><h3>Send Documents</h3><p>Share your CV and passport copy for our team to review and shortlist.</p></div>
+    <div class="step"><div class="step-num">3</div><h3>Get Shortlisted</h3><p>We match you with verified employer openings that fit your profile.</p></div>
+    <div class="step"><div class="step-num">4</div><h3>Fly to Gulf</h3><p>Complete visa process, arrange travel, and start your overseas career.</p></div>
+  </div>
+</section>
+
+<!-- COST SECTION -->
+<section class="cost-section">
+  <div style="text-align:center; margin-bottom: 36px;">
+    <div class="section-label">Important — Read Before Applying</div>
+    <div class="section-title">Cost to Candidate</div>
+    <div class="section-sub" style="margin: 0 auto;">This is a self-funded opportunity. Please review all charges below before proceeding.</div>
+  </div>
+  <div class="cost-box">
+    <div class="cost-header">
+      <div class="warn-icon">🚫</div>
+      Non-Sponsored Position — Self-Funded
+    </div>
+    <div class="cost-row">
+      <div class="cost-row-label"><span>📄</span> Visa Processing</div>
+      <div class="cost-row-amount">₹40,000 – ₹50,000</div>
+    </div>
+    <div class="cost-row">
+      <div class="cost-row-label"><span>✈️</span> Air Ticket</div>
+      <div class="cost-row-amount">₹15,000 – ₹20,000</div>
+    </div>
+    <div class="cost-row">
+      <div class="cost-row-label"><span>🧾</span> Other Charges</div>
+      <div class="cost-row-amount">₹10,000 – ₹15,000</div>
+    </div>
+    <div class="cost-total">
+      <span>💰 Total Cost</span>
+      <span>₹65,000 – ₹85,000</span>
+    </div>
+    <div class="refund-tag">
+      ✅ <span><strong>Refund Policy:</strong> The employer will refund visa and air ticket charges after successful completion of 90 days of work.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>1,000+ Gulf Jobs Ready.<br>Are You Ready?</h2>
+  <p>Serious candidates only. Register your interest in under 60 seconds.</p>
+  <button class="btn-primary" onclick="openModal()">Apply Now — Express Interest</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>TGC</strong> — Your Career, Beyond Borders<br />
+  <span style="margin-top:6px; display:block;">📍 15th Floor, Ergo Tower, Kolkata 700091</span>
+  <span style="margin-top:6px; display:block;">© 2025 TGC. All rights reserved.</span>
+</footer>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  MODAL — PAID SERVICE DECLARATION             -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="modal-backdrop" id="modal" onclick="handleBackdropClick(event)">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+
+    <div class="modal-badge">🚫 Paid Service Notice</div>
+
+    <h2 id="modal-title">Non-Sponsored Position</h2>
+    <p class="modal-subtitle">This is <strong>NOT</strong> an employer-sponsored job. The candidate must self-fund all charges listed below before departure.</p>
+
+    <div class="modal-rows">
+      <div class="modal-row">
+        <div class="modal-row-left"><div class="modal-row-icon">📄</div><div class="modal-row-text">Visa Processing</div></div>
+        <div class="modal-row-amount">₹40,000 – ₹50,000</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-left"><div class="modal-row-icon">✈️</div><div class="modal-row-text">Air Ticket</div></div>
+        <div class="modal-row-amount">₹15,000 – ₹20,000</div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-row-left"><div class="modal-row-icon">🧾</div><div class="modal-row-text">Other Charges</div></div>
+        <div class="modal-row-amount">₹10,000 – ₹15,000</div>
+      </div>
+    </div>
+
+    <div class="modal-total-row">
+      <span>💰 Total Cost</span>
+      <span>₹65,000 – ₹85,000</span>
+    </div>
+
+    <div class="modal-refund">
+      ✅ <span><strong>Refund Policy:</strong> Employer will refund visa and air ticket charges after successful completion of <strong>90 days of work.</strong></span>
+    </div>
+
+    <p class="modal-terms">By clicking <strong>"I Agree — Yes, I'm Interested"</strong> you confirm you have fully read, understood, and accepted these terms.</p>
+
+    <a class="btn-agree" id="wa-link" href="#" target="_blank" onclick="handleAgree(event)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.827.737 5.476 2.025 7.775L0 32l8.443-2.005A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.264 13.264 0 01-6.76-1.853l-.484-.29-5.014 1.193 1.243-4.88-.316-.5A13.275 13.275 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.307-9.76c-.4-.2-2.368-1.168-2.733-1.3-.366-.133-.633-.2-.9.2s-1.033 1.3-1.267 1.567c-.233.267-.467.3-.867.1-.4-.2-1.69-.623-3.22-1.987-1.19-1.062-1.993-2.373-2.227-2.773-.233-.4-.025-.617.175-.817.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.167-1.233-2.967-.323-.78-.655-.673-.9-.685l-.767-.013c-.267 0-.7.1-1.067.5s-1.4 1.367-1.4 3.333 1.433 3.867 1.633 4.133c.2.267 2.82 4.307 6.833 6.04.955.413 1.7.66 2.282.844.958.305 1.83.262 2.52.159.769-.114 2.368-.967 2.702-1.9.333-.933.333-1.733.233-1.9-.1-.167-.367-.267-.767-.467z"/></svg>
+      I Agree — Yes, I'm Interested
+    </a>
+  </div>
+</div>
+
+<script>
+  const WHATSAPP_NUMBER = '917991493899';
+  const WHATSAPP_MESSAGE = encodeURIComponent('Yes I am interested in this UAE job opportunity. I have read and accepted the terms regarding the self-funded placement charges.');
+
+  function openModal() {
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function handleBackdropClick(e) {
+    if (e.target === document.getElementById('modal')) closeModal();
+  }
+
+  function handleAgree(e) {
+    e.preventDefault();
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+    window.open(url, '_blank');
+    closeModal();
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
+</body>
+</html>
